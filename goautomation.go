@@ -4,12 +4,13 @@ import (
 	"fmt"
 	"time"
 
-	"secrets"
-
 	"github.com/sclevine/agouti"
+	"github.com/season-three/hiromae_week_5/secret"
 )
 
 func main() {
+	fmt.Println(secret.MyPassword())
+
 	url := "https://www.linkedin.com/login/ja?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
 	driver := agouti.ChromeDriver()
 

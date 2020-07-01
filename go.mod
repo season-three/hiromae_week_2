@@ -1,4 +1,4 @@
-module github.com/season-three/hiromae_week_5/goaws
+module github.com/season-three/hiromae_week_5
 
 go 1.14
 
