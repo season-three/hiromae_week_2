@@ -101,7 +101,7 @@ func main() {
 		if err != nil {
 			fmt.Println("Failed to open accept page")
 		}
-		//申請されてる分だけ押すにはどうすれば良いか？
+		//申請されてる分だけ押すにはどうすれば良いか？？
 		for {
 			err := page.FindByClass("artdeco-button__text").Click()
 			if err != nil {
