@@ -76,35 +76,39 @@ func main() {
 		time.Sleep(5 * time.Second)
 	}
 
-	//別の単語で検索 or 新しいURLで検索
+	/*
 
-	//プロフィール見てくれた人につながり申請(スクロールの方法が分かったら)
-	// URL := https://www.linkedin.com/me/profile-views/urn:li:wvmp:summary/
+		//別の単語で検索 or 新しいURLで検索
 
-	//いいね1日5つの投稿に押す？
-	url10 := "https://www.linkedin.com/feed/"
+		//プロフィール見てくれた人につながり申請(スクロールの方法が分かったら)
+		// URL := https://www.linkedin.com/me/profile-views/urn:li:wvmp:summary/
 
-	err = page.Navigate(url10)
-	if err != nil {
-		fmt.Println("Failed to open feed page")
-	}
-	for i := 0; i < 5; i++ {
-		page.FindByClass("artdeco-button__text react-button__text").Click()
-	}
+		//いいね1日5つの投稿に押す？
+		url10 := "https://www.linkedin.com/feed/"
 
-	//繋がり申請があれば承認押す
-	url11 := "https://www.linkedin.com/mynetwork/"
-
-	err = page.Navigate(url11)
-	if err != nil {
-		fmt.Println("Failed to open accept page")
-	}
-	//申請されてる分だけ押すにはどうすれば良いか？
-	for {
-		err := page.FindByClass("artdeco-button__text").Click()
+		err = page.Navigate(url10)
 		if err != nil {
-			break
+			fmt.Println("Failed to open feed page")
 		}
-	}
+		for i := 0; i < 5; i++ {
+			page.FindByClass("artdeco-button__text react-button__text").Click()
+		}
 
+		//繋がり申請があれば承認押す
+		url11 := "https://www.linkedin.com/mynetwork/"
+
+		err = page.Navigate(url11)
+		if err != nil {
+			fmt.Println("Failed to open accept page")
+		}
+		//申請されてる分だけ押すにはどうすれば良いか？
+		for {
+			err := page.FindByClass("artdeco-button__text").Click()
+			if err != nil {
+				break
+			}
+		}
+
+
+	*/
 }
