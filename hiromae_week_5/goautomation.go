@@ -30,7 +30,6 @@ func main() {
 
 	//ログインページ開く
 	err = page.Navigate(url)
-
 	if err != nil {
 		fmt.Println("Failed to open login page")
 	}
@@ -63,7 +62,7 @@ func main() {
 		time.Sleep(3 * time.Second)
 	}
 	if err != nil {
-		scroll := ScrollFinger(0, 200)
+		scroll := (*agouti.Selection).ScrollFinger(0, 200)
 		time.Sleep(2 * time.Second)
 	} else {
 		page.FindByButton("次へ").Submit()
